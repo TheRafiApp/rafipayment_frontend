@@ -7,6 +7,17 @@ import config from '@/config'
 export const handleXHRErrors = (response) => {
   let json = response.json()
   if (!response.ok) {
+    // handle api deprecation :)
+    json.then(async (error) => {
+      if (error.error === 'deprecated') {
+        const app = await import('@/app')
+        app.alert(
+          'We have released a new version of the Rafi Payment platform. You must update to the latest version of the app to continue.',
+          null,
+          'App Updated'
+        )
+      }
+    })
     return json.then(
       Promise.reject.bind(Promise)
     )

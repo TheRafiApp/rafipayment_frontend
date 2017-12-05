@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div class="alert-container" @click.self="cancel">
-      <div class="alert" @keyup.esc="cancel" @keyup.enter="validate">
+      <div class="alert" @keyup.esc="cancel" @keydown.enter="validate">
         <loading v-if="alert_loading"></loading>
         <div class="alert-header" v-if="has_header">
           <slot name="header">
