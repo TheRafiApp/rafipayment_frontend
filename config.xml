@@ -1,95 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.rafi.payment" version="1.1.2" versionCode="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>Rafi Payment</name>
-  <description>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.rafi.payment" version="1.1.3" versionCode="1.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Rafi Payment</name>
+    <description>
     Rent management at your fingertips
   </description>
-  <author email="nford@rafiproperties.com" href="http://payment.rafiproperties.com">
+    <author email="nford@rafiproperties.com" href="http://payment.rafiproperties.com">
     Rafi Payment Team
   </author>
-  <content src="index.html"/>
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="android-minSdkVersion" value="15"/>
-  <preference name="fullscreen" value="false"/>
-  <preference name="StatusBarOverlaysWebView" value="true"/>
-  <preference name="StatusBarStyle" value="lightcontent"/>
-  <preference name="KeyboardDisplayRequiresUserAction" value="false"/>
-  <preference name="orientation" value="portrait"/>
-  <preference name="AndroidLaunchMode" value="singleInstance"/>
-  <platform name="android">
-    <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png"/>
-    <icon density="mdpi" src="res/icons/android/icon-48-mdpi.png"/>
-    <icon density="hdpi" src="res/icons/android/icon-72-hdpi.png"/>
-    <icon density="xhdpi" src="res/icons/android/icon-96-xhdpi.png"/>
-    <icon density="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png"/>
-    <icon density="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png"/>
-    <splash density="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png"/>
-    <splash density="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png"/>
-    <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png"/>
-    <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png"/>
-    <splash density="port-xxhdpi" src="res/screens/android/screen-xxhdpi-portrait.png"/>
-    <splash density="port-xxxhdpi" src="res/screens/android/screen-xxxhdpi-portrait.png"/>
-  </platform>
-  <platform name="ios">
-    <icon height="29" src="res/icons/ios/icon-small.png" width="29"/>
-    <icon height="58" src="res/icons/ios/icon-small-2x.png" width="58"/>
-    <icon height="40" src="res/icons/ios/icon-40.png" width="40"/>
-    <icon height="80" src="res/icons/ios/icon-40-2x.png" width="80"/>
-    <icon height="50" src="res/icons/ios/icon-50.png" width="50"/>
-    <icon height="100" src="res/icons/ios/icon-50-2x.png" width="100"/>
-    <icon height="60" src="res/icons/ios/icon-60.png" width="60"/>
-    <icon height="120" src="res/icons/ios/icon-60-2x.png" width="120"/>
-    <icon height="180" src="res/icons/ios/icon-60-3x.png" width="180"/>
-    <icon height="76" src="res/icons/ios/icon-76.png" width="76"/>
-    <icon height="152" src="res/icons/ios/icon-76-2x.png" width="152"/>
-    <icon height="72" src="res/icons/ios/icon-72.png" width="72"/>
-    <icon height="144" src="res/icons/ios/icon-72-2x.png" width="144"/>
-    <splash height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320"/>
-    <splash height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640"/>
-    <splash height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768"/>
-    <splash height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536"/>
-    <splash height="1136" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640"/>
-    <splash height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750"/>
-    <splash height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242"/>
-  </platform>
-  <platform name="android">
-    <resource-file src="google-services.json" target="google-services.json"/>
-    <allow-intent href="market:*"/>
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
-  <access origin="*"/>
-  <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
-  <allow-intent href="tel:*"/>
-  <allow-intent href="sms:*"/>
-  <allow-intent href="mailto:*"/>
-  <allow-intent href="geo:*"/>
-  <allow-navigation href="https://*.dwolla.com"/>
-  <universal-links>
-    <host event="launch" name="app.payment.rafiproperties.com" scheme="https"/>
-    <host event="launch" name="app.staging.payment.rafiproperties.com" scheme="https"/>
-  </universal-links>
-  <engine name="ios" spec="~4.4.0"/>
-  <engine name="browser" spec="~4.1.0"/>
-  <plugin name="cordova-plugin-battery-status" spec="~1.1.1"/>
-  <plugin name="cordova-plugin-console" spec="~1.0.2"/>
-  <plugin name="cordova-plugin-device" spec="~1.1.1"/>
-  <plugin name="cordova-plugin-device-motion" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-device-orientation" spec="~1.0.2"/>
-  <plugin name="cordova-plugin-dialogs" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-globalization" spec="~1.0.3"/>
-  <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0"/>
-  <plugin name="cordova-plugin-network-information" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-splashscreen" spec="~3.2.1"/>
-  <plugin name="cordova-plugin-statusbar" spec="~2.1.2"/>
-  <plugin name="cordova-plugin-statusbar-hide-on-startup" spec="~0.1.7"/>
-  <plugin name="cordova-plugin-vibration" spec="~2.1.0"/>
-  <plugin name="cordova-plugin-whitelist" spec="~1.2.1"/>
-  <plugin name="cordova-plugin-firebase-analytics" spec="^0.10.1"/>
-  <plugin name="phonegap-plugin-push" spec="~1.10.5">
-    <variable name="SENDER_ID" value="1:582343470433:android:9bde5be4ab52af2c"/>
-  </plugin>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="fullscreen" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="AndroidLaunchMode" value="singleInstance" />
+    <platform name="android">
+        <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icons/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icons/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
+        <splash density="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+        <splash density="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+        <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+        <splash density="port-xxhdpi" src="res/screens/android/screen-xxhdpi-portrait.png" />
+        <splash density="port-xxxhdpi" src="res/screens/android/screen-xxxhdpi-portrait.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="29" src="res/icons/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/icons/ios/icon-small-2x.png" width="58" />
+        <icon height="40" src="res/icons/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icons/ios/icon-40-2x.png" width="80" />
+        <icon height="50" src="res/icons/ios/icon-50.png" width="50" />
+        <icon height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
+        <icon height="60" src="res/icons/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+        <icon height="180" src="res/icons/ios/icon-60-3x.png" width="180" />
+        <icon height="76" src="res/icons/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+        <icon height="72" src="res/icons/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+        <splash height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
+        <splash height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+        <splash height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
+        <splash height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" />
+        <splash height="1136" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+        <splash height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
+        <splash height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
+    </platform>
+    <platform name="android">
+        <resource-file src="google-services.json" target="google-services.json" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="https://*.dwolla.com" />
+    <universal-links>
+        <host event="launch" name="app.payment.rafiproperties.com" scheme="https" />
+        <host event="launch" name="app.staging.payment.rafiproperties.com" scheme="https" />
+    </universal-links>
+    <engine name="ios" spec="^4.4.0" />
+    <engine name="browser" spec="~4.1.0" />
+    <plugin name="cordova-plugin-firebase-analytics" spec="^0.10.1" />
+    <plugin name="cordova-plugin-battery-status" spec="~1.1.1" />
+    <plugin name="cordova-plugin-console" spec="~1.0.2" />
+    <plugin name="cordova-plugin-device" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion" spec="~1.2.0" />
+    <plugin name="cordova-plugin-device-orientation" spec="~1.0.2" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.2.0" />
+    <plugin name="cordova-plugin-globalization" spec="~1.0.3" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
+    <plugin name="cordova-plugin-network-information" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.1.2" />
+    <plugin name="cordova-plugin-statusbar-hide-on-startup" spec="~0.1.7" />
+    <plugin name="cordova-plugin-vibration" spec="~2.1.0" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />
+    <plugin name="phonegap-plugin-push" spec="~1.10.5">
+        <variable name="SENDER_ID" value="1:582343470433:android:9bde5be4ab52af2c" />
+    </plugin>
 </widget>

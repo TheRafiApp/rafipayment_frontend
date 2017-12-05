@@ -38,7 +38,23 @@
     "vue-router": "^2.5.2",
     "vue-touch": "^2.0.0-beta.4",
     "vuex": "^2.2.1",
-    "whatwg-fetch": "^2.0.2"
+    "whatwg-fetch": "^2.0.2",
+    "cordova-browser": "~4.1.0",
+    "cordova-plugin-battery-status": "~1.1.1",
+    "cordova-plugin-console": "~1.0.2",
+    "cordova-plugin-device": "~1.1.1",
+    "cordova-plugin-device-motion": "~1.2.0",
+    "cordova-plugin-device-orientation": "~1.0.2",
+    "cordova-plugin-dialogs": "~1.2.0",
+    "cordova-plugin-globalization": "~1.0.3",
+    "cordova-plugin-inappbrowser": "~1.3.0",
+    "cordova-plugin-network-information": "~1.2.0",
+    "cordova-plugin-splashscreen": "~3.2.1",
+    "cordova-plugin-statusbar": "~2.1.2",
+    "cordova-plugin-statusbar-hide-on-startup": "~0.1.7",
+    "cordova-plugin-vibration": "~2.1.0",
+    "cordova-plugin-whitelist": "~1.2.1",
+    "phonegap-plugin-push": "~1.10.5"
   },
   "devDependencies": {
     "app-root-dir": "^1.0.2",
@@ -134,7 +150,28 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-firebase-analytics": {}
-    }
+      "cordova-plugin-firebase-analytics": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-device-motion": {},
+      "cordova-plugin-device-orientation": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-statusbar-hide-on-startup": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-whitelist": {},
+      "phonegap-plugin-push": {
+        "SENDER_ID": "1:582343470433:android:9bde5be4ab52af2c"
+      }
+    },
+    "platforms": [
+      "ios",
+      "browser"
+    ]
   }
 }
