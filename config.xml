@@ -44,6 +44,7 @@
         <icon height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
         <icon height="72" src="res/icons/ios/icon-72.png" width="72" />
         <icon height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+        <icon height="1024" width="1024" src="res/icons/ios/icon-1024.jpg" />
         <splash height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
         <splash height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
         <splash height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
@@ -72,7 +73,6 @@
         <host event="launch" name="app.payment.rafiproperties.com" scheme="https" />
         <host event="launch" name="app.staging.payment.rafiproperties.com" scheme="https" />
     </universal-links>
-    <engine name="ios" spec="^4.4.0" />
     <engine name="browser" spec="~4.1.0" />
     <plugin name="cordova-plugin-firebase-analytics" spec="^0.10.1" />
     <plugin name="cordova-plugin-battery-status" spec="~1.1.1" />
@@ -92,4 +92,5 @@
     <plugin name="phonegap-plugin-push" spec="~1.10.5">
         <variable name="SENDER_ID" value="1:582343470433:android:9bde5be4ab52af2c" />
     </plugin>
+    <engine name="ios" spec="~4.5.1" />
 </widget>
