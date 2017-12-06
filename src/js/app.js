@@ -94,21 +94,21 @@ if (env === 'cordova') {
   import('@/modules/universal_links')
 }
 
-let analytics
+// let analytics
 
-if (config.google_analytics) {
-  import('@/modules/google_analytics')
-    .then(GoogleAnalytics => {
-      analytics = new GoogleAnalytics(Vue, router)
-    })
-}
+// if (config.google_analytics) {
+//   import('@/modules/google_analytics')
+//     .then(GoogleAnalytics => {
+//       analytics = new GoogleAnalytics(Vue, router)
+//     })
+// }
 
-if (config.firebase_analytics) {
-  import('@/modules/firebase_analytics')
-    .then(FirebaseAnalytics => {
-      analytics = new FirebaseAnalytics(router)
-    })
-}
+// if (config.firebase_analytics) {
+//   import('@/modules/firebase_analytics')
+//     .then(FirebaseAnalytics => {
+//       analytics = new FirebaseAnalytics(router)
+//     })
+// }
 
 install(Vue)
 
@@ -116,7 +116,7 @@ const app = new Vue({
   el: '.app',
   router,
   store,
-  analytics,
+  // analytics,
   template: '<App/>',
   components: { App },
   data() {

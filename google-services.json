@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "582343470433",
+    "firebase_url": "https://rafi-payment.firebaseio.com",
+    "project_id": "rafi-payment",
+    "storage_bucket": "rafi-payment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582343470433:android:9bde5be4ab52af2c",
+        "android_client_info": {
+          "package_name": "com.rafi.payment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582343470433-kpg9p2r37a5e5jm204drctot701ocqj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rafi.payment",
+            "certificate_hash": "6e443df4a061ec2fff0391d931c002adc4c1de09"
+          }
+        },
+        {
+          "client_id": "582343470433-a2claegcp9ic26hr46mpl63mbjtu8dm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyyhutDJOMQEx9_Zhh8MPoMGgRWznVgEA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582343470433-a2claegcp9ic26hr46mpl63mbjtu8dm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582343470433-4cai7gd1dkukqmbf45na4p5ksq0fno9t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rafi.payment",
+                "app_store_id": "1248376543"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
